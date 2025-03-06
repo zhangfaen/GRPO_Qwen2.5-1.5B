@@ -30,6 +30,8 @@ DeepSeek-R1-Zero展示了强化学习算法帮助大模型的推理方面出现�
 本文将从零开始，展示从零实现GRPO（Group Relative Policy Optimization）算法——一种由DeepSeek团队开发的高效强化学习方法——来训练一个15亿参数的小模型，复现DeepSeek-R1-Zero的“啊哈”时刻。
 
 我写了一个Python脚本（https://github.com/zhangfaen/GRPO_Qwen2.5-1.5B/blob/main/grpo.py ），实现GRPO算法，强化学习Qwen2.5-1.5B-Instruct这个15亿参数的模型。强化学习前，这个模型在GSM8K数据集上的准确度为14%左右，强化学习后，其准确度可以达到86%左右。
+<img width="611" alt="image" src="https://github.com/user-attachments/assets/9a372723-1c6b-4158-a88f-8eeba8f13b06" />
+
 
 注：GSM8K是一个由OpenAI发布的数据集，有8500个高质量数学问题组成。这些问题需要2到8个步骤来解决，解决方法主要是使用基本的算术运算(+-/*)进行一连串的基本计算，以得出最终答案。虽然看起来很简单，但很多大模型的表现都不太好。
 
