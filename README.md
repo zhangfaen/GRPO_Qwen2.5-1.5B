@@ -1,8 +1,19 @@
 # 从零开始写GRPO算法 | 强化学习15亿参数小模型，复现DeepSeek-R1-Zero的“啊哈”时刻 | 推理能力从14%提升到86%
 
+## 快速开始
+```bash
+%conda create -n grpo  python=3.12 -y
+%conda activate grpo
+%pip install torch transformers datasets accelerate
+%pip install flash-attn --no-build-isolation
+%python grpo.py
+```
+
 近来，在AI领域，强化学习（Reinforcement Learning, RL）强势崛起。特别是在大模型中，强化学习通过试错和奖励机制，能够帮助大模型在复杂任务中表现出更智能的行为。3月6日，2024年图灵奖也颁给了强化学习。
 
 DeepSeek-R1-Zero展示了强化学习算法帮助大模型的推理方面出现“啊哈”时刻。所谓“啊哈”时刻，指的是模型在训练过程中突然“开窍”，不仅能给出正确答案，还能展示出清晰的推理过程。
+
+千行代码一个脚本，在小模型上，尝试复现DeepSeek R1 Zero的“啊哈”时刻。原理类似于QwQ-32B，无需使用CoT数据微调，模型通过强化学习自己“悟出来”：若要推理，需要思考。简单来说：蒸馏是学，左右互搏式的强化学习是悟。
 
 ## 强化学习 vs. 监督学习：为什么强化学习更“聪明”？
 
