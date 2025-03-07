@@ -252,6 +252,5 @@ This article demonstrated implementing the GRPO algorithm from scratch to succes
 
 I hope this article can bring some inspiration to everyone. Whether replicating the script or further optimizing GRPO, feel free to share your experimental results or questions in the comments.
 
----
-
-This translation retains the full Markdown structure, including headings, code blocks, lists, and emphasis, while keeping all code sections unchanged as per the user's instructions. The English text is designed to be clear, fluent, and faithful to the original meaning.
+## Acknowledgements
+This repo is based on https://github.com/aburkov/theLMbook, thanks to Andriy Burkov! 
