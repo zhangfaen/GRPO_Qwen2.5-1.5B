@@ -1,5 +1,7 @@
 # Writing the GRPO Algorithm from Scratch | Reinforcement Learning with a 1.5 Billion Parameter Small Model, Replicating DeepSeek-R1-Zero's 'Aha' Moment | Reasoning Ability Improves from 14% to 86%
 
+**[中文版本](https://github.com/zhangfaen/GRPO_Qwen2.5-1.5B/edit/main/README.zh.md)**   
+
 **Quick Start**
 
 ```bash
